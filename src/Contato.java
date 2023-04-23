@@ -1,9 +1,12 @@
+
+
 public class Contato {
     private String name;
     private String telefone;
     private int id;
     private static int contador;
-    public Contato(){
+
+    public Contato() {
         contador++;
         this.id += contador;
     }
@@ -26,10 +29,11 @@ public class Contato {
 
     @Override
     public String toString() {
-        return "{" +
+        return
                 "name='" + name + '\'' +
-                ", telefone='" + telefone + '\'' +
-                ", id=" + id +
-                '}';
+                        ", telefone='" + telefone + '\'' +
+                        ", id=" + id;
     }
+
+
 }

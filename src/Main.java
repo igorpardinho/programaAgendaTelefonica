@@ -22,9 +22,14 @@ public class Main {
                 agenda.getContatos();
             } else if (digito == 3) {
                 sc = new Scanner(System.in);
+                if (agenda.contatos.isEmpty()) {
+                    System.out.println("Sem contatos adicionados");
+                    continue;
+                }
                 System.out.println("Digite o nome para realizar a busca: ");
                 String nome = sc.nextLine();
                 agenda.getContato(nome);
+
             } else {
                 break;
             }
